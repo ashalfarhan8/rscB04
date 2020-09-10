@@ -10,6 +10,8 @@
 body {
   background-color: #eee;
   font-family: 'Lato', sans-serif;
+  background-image: url("assets/images/rice_fields.jpg");
+  background-size: cover;
 }
 
 #page-wrapper {
@@ -33,6 +35,11 @@ a {
   margin: 0 auto;
 }
 
+.container #features {
+  /* background-image: url("assets/images/sawah.jpg"); */
+  background-size: cover;
+}
+
 .btn {
   padding: 0 20px;
   height: 40px;
@@ -40,7 +47,7 @@ a {
   font-weight: 900;
   text-transform: uppercase;
   border: 3px black solid;
-  border-radius: 2px;
+  border-radius: 10px;
   background: transparent;
   cursor: pointer;
 }
@@ -61,7 +68,7 @@ header {
 }
 
 .logo {
-  width: 60vw;
+  width: 100%;
   display: flex;
 }
 .logo h3 {
@@ -86,7 +93,7 @@ nav {
 }
 
 nav > ul {
-  width: 35vw;
+  width: 78vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -103,8 +110,12 @@ nav > ul {
 }
 
 #introduction > h2 {
-  margin-bottom: 20px;
-  word-wrap: break-word;
+  text-transform: capitalize;
+  /* word-wrap: break-word; */
+}
+
+#introduction > h3 {
+  padding-bottom: 10px;
 }
 
 #features {
@@ -145,6 +156,7 @@ nav > ul {
   margin: 10px;
   border: 1px solid #000;
   border-radius: 3px;
+  background-color: #ddd;
 }
 
 .product > .level {
@@ -164,8 +176,14 @@ nav > ul {
   margin: 15px 0;
 }
 
+.product > ol > img {
+  width: 250px;
+  height: 250px;
+}
+
 .product > ol > li {
   padding: 5px 0;
+  text-align: center;
 }
 
 .product > button {
@@ -226,7 +244,7 @@ footer > span {
   }
   .logo > h3 {
     font-size: 20px;
-    margin-top: 
+    margin-top: 15px;
   }
 }
 
